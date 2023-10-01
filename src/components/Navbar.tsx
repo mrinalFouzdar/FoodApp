@@ -1,8 +1,8 @@
-import Menu from "@/app/menu/page";
 import Link from "next/link";
 import React from "react";
 import CartIcon from "./CartIcon";
 import Image from "next/image";
+import Menu from "@/components/Menu";
 
 const Navbar = () => {
   let user = false;
@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
 
       <div className="md:hidden">
-        <Menu />
+        <Menu/>
       </div>
 
       {/* RIFGT LINK */}
