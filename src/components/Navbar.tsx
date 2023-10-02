@@ -15,19 +15,18 @@ const Navbar = () => {
         <Link href="/">Working Hours</Link>
       </div>
 
-
       <div className="md:font-bold flex-1 md:text-center text-xl">
         <Link href="/">FOOD House</Link>
       </div>
 
       <div className="md:hidden">
-        <Menu/>
+        <Menu />
       </div>
 
       {/* RIFGT LINK */}
       <div className="hidden md:flex gap-4 items-center flex-1 justify-end">
         <div className="md:absolute top-3 right-2 lg:static flex items-center gap-3 px-2 py-1 bg-orange-300 cursor-pointer  rounded-md">
-          <Image src='/phone.png' alt="phone" width={20} height={20}/>
+          <Image src="/phone.png" alt="phone" width={20} height={20} />
           <span>903993839</span>
         </div>
         {!user ? (
@@ -35,7 +34,9 @@ const Navbar = () => {
         ) : (
           <Link href="/orders">Orders</Link>
         )}
-        <CartIcon />
+        <Link href="/cart">
+          <CartIcon />
+        </Link>
       </div>
     </div>
   );

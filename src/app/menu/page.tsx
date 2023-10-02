@@ -16,7 +16,7 @@ const Menu = () => {
             <h1 className="uppercase text-3xl font-bold">{category.title}</h1>
             <p className="text-sm my-4">{category.desc}</p>
             <button
-              className={`hidden 2xl:block bg-${category.color} text-${
+              className={`hidden 2xl:block  bg-${category.color} text-${
                 category.color === "black" ? "white" : "red-500"
               } py-2 px-4 rounded-md`}
             >
